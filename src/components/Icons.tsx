@@ -4,10 +4,10 @@ import styles from "./Icons.module.css";
 const Icons: React.FC = () => {
   return (
     <div className={styles.Icons}>
-      <NavLink activeClassName={styles.active} to="/home">
+      <NavLink activeClassName={styles.active} to="/word-race/home">
         Home
       </NavLink>
-      <NavLink activeClassName={styles.active} to="/score-board">
+      <NavLink activeClassName={styles.active} to="/word-race/score-board">
         Score Board
       </NavLink>
     </div>

@@ -14,9 +14,7 @@ const ScoreBoard: React.FC = () => {
 
   useEffect(() => {
     axios
-      .get(
-        "https://cors-anywhere.herokuapp.com/https://word-race-614b2-default-rtdb.firebaseio.com/data.json"
-      )
+      .get("https://word-race-614b2-default-rtdb.firebaseio.com/data.json")
       .then((res) => {
         if (res.status === 200) setScoreBoard(res.data);
         setStatus(true);

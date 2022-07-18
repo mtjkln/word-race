@@ -52,13 +52,13 @@ function App() {
       <div>
         <Header />
         <Switch>
-          <Route path="/home">
+          <Route path="/word-race/home">
             <Home stack={store.stack} s={store.pressedKey} />
           </Route>
-          <Route path="/" exact>
-            <Redirect to="/home" />
+          <Route path="/word-race" exact>
+            <Redirect to="/word-race/home" />
           </Route>
-          <Route path="/score-board">
+          <Route path="/word-race/score-board">
             <ScoreBoard />
           </Route>
         </Switch>

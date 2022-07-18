@@ -38,7 +38,7 @@ const raceCartSlice = createSlice({
     updateGameOn: (state) => {
       state.gameOn = false;
       axios.post(
-        "https://cors-anywhere.herokuapp.com/https://word-race-614b2-default-rtdb.firebaseio.com/data.json",
+        "https://word-race-614b2-default-rtdb.firebaseio.com/data.json",
         { score: state.points }
       );
     },
