@@ -11,22 +11,21 @@ import { AppDispatch } from "./store/store";
 import ScoreBoard from "./screens/ScoreBoard";
 function App() {
   const store = useAppSelector((state) => state);
+  const dispatch = useDispatch<AppDispatch>();
   useEffect(() => {
-    if (store.level === 4) {
+    if (store.level === 7) {
       dispatch(raceCartSliceAction.updateGameOn());
     }
-  }, [store]);
-
-  const dispatch = useDispatch<AppDispatch>();
+  }, [store, dispatch]);
 
   const handleKeyDown = (event: React.KeyboardEvent<HTMLElement>) => {
-    if (store.level !== 4) {
+    if (store.level !== 7) {
       dispatch(raceCartSliceAction.setPressedKey(event.key));
       dispatch(raceCartSliceAction.updateWord(event.key));
-    } else dispatch(raceCartSliceAction.updateGameOn());
+    }
   };
   const handleKeyUp = () => {
-    if (store.level !== 4) {
+    if (store.level !== 7) {
       dispatch(raceCartSliceAction.setPressedKey(""));
 
       if (store.word.length === store.stack[0].length) {

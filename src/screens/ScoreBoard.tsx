@@ -4,11 +4,7 @@ import axios from "axios";
 import styles from "./ScoreBoard.module.css";
 
 const ScoreBoard: React.FC = () => {
-  const [scoreBoard, setScoreBoard] = useState<any>({
-    "12344": { score: 10 },
-    "3456": { score: 299 },
-    "2322": { score: 23 },
-  });
+  const [scoreBoard, setScoreBoard] = useState<any>({});
   const [status, setStatus] = useState<Boolean>(false);
   const [scoreArray, setScoreArray] = useState<number[]>([]);
 
@@ -26,19 +22,21 @@ const ScoreBoard: React.FC = () => {
     Object.keys(scoreBoard).map((item) => arr.push(scoreBoard[item].score));
     setScoreArray(arr);
     setScoreArray((arr) => arr.sort((a, b) => b - a));
-    setScoreArray((arr) => arr.slice(0, 9));
-    console.log(scoreArray);
-  }, [status]);
+    setScoreArray((arr) => arr.slice(0, 11));
+    setScoreArray((arr) => [...new Set(arr)]);
+  }, [status, scoreArray, scoreBoard]);
   return (
     <div className={styles.scoreBoard}>
       {status ? (
         <div className={styles.scoreBox}>
           <div className={styles.scoreTitle}>Top 10 Scores</div>
-          {scoreArray.map((item) => (
-            <div className={styles.scoreVal} key={item}>
-              {item}
-            </div>
-          ))}
+          <div className={styles.putScroll}>
+            {scoreArray.map((item, index) => (
+              <div className={styles.scoreVal} key={index}>
+                {++index}. {item}
+              </div>
+            ))}
+          </div>
         </div>
       ) : (
         <div className={styles.loading}>Loading ...... </div>

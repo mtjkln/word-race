@@ -9,6 +9,7 @@ const Over: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
   const onRestartHandler = () => {
     dispatch(raceCartSliceAction.reset());
+    dispatch(raceCartSliceAction.restart());
   };
   return (
     <div className={styles.container}>

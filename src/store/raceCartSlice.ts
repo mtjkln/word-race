@@ -6,7 +6,14 @@ import { InitialState } from "../model";
 const initialState: InitialState = {
   word: "",
   pressedKey: "",
-  stack: ["hard", "vodka", "extreme"],
+  stack: [
+    "hard",
+    "vodka",
+    "extreme",
+    "mritunjay",
+    "photosynthesis",
+    "hakunamatata",
+  ],
   points: 0,
   multiplier: 1,
   gameOn: true,
@@ -46,14 +53,23 @@ const raceCartSlice = createSlice({
       state.name = action.payload;
     },
     reset: (state) => {
-      state.gameOn = true;
       state.level = 1;
       state.multiplier = 1;
       state.points = 0;
       state.word = "";
       state.pressedKey = "";
-      state.stack = ["hard", "vodka", "extreme"];
+      state.stack = [
+        "hard",
+        "vodka",
+        "extreme",
+        "mritunjay",
+        "photosynthesis",
+        "hakunamatata",
+      ];
       state.name = "";
+    },
+    restart: (state) => {
+      state.gameOn = true;
     },
   },
 });
