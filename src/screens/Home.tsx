@@ -10,7 +10,6 @@ import Over from "../components/Over";
 
 const Home: React.FC<PropsHome> = ({ stack, s }) => {
   const store = useAppSelector((state) => state);
-  const onNameInput = () => {};
   return (
     <>
       {store.gameOn && (
