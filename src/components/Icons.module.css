@@ -1,0 +1,17 @@
+.Icons{
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    
+}
+.Icons a{
+    margin: 20px;
+    text-decoration: none;
+    color: orange;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.active{
+    border-bottom: 2px solid orange;
+}
