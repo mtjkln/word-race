@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/word-race/static/css/main.6ce2e616.css",
+    "main.css": "/word-race/static/css/main.e44bba05.css",
     "main.js": "/word-race/static/js/main.c73858cc.js",
     "static/js/787.b5135b97.chunk.js": "/word-race/static/js/787.b5135b97.chunk.js",
     "index.html": "/word-race/index.html",
-    "main.6ce2e616.css.map": "/word-race/static/css/main.6ce2e616.css.map",
+    "main.e44bba05.css.map": "/word-race/static/css/main.e44bba05.css.map",
     "main.c73858cc.js.map": "/word-race/static/js/main.c73858cc.js.map",
     "787.b5135b97.chunk.js.map": "/word-race/static/js/787.b5135b97.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ce2e616.css",
+    "static/css/main.e44bba05.css",
     "static/js/main.c73858cc.js"
   ]
 }
