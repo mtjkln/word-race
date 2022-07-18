@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/word-race/static/css/main.96d3df06.css",
+    "main.js": "/word-race/static/js/main.990b52c1.js",
+    "static/js/787.b5135b97.chunk.js": "/word-race/static/js/787.b5135b97.chunk.js",
+    "index.html": "/word-race/index.html",
+    "main.96d3df06.css.map": "/word-race/static/css/main.96d3df06.css.map",
+    "main.990b52c1.js.map": "/word-race/static/js/main.990b52c1.js.map",
+    "787.b5135b97.chunk.js.map": "/word-race/static/js/787.b5135b97.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.96d3df06.css",
+    "static/js/main.990b52c1.js"
+  ]
+}
